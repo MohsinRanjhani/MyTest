@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: yellow;
+}
+
+.container{
+    height: 80vh;
+    width: 100%;
+    background-image:url(Images/tech.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+
+}
+/* nav section  */
+.navbar{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color:black;
+    
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 45px;
+    padding-left: 10px;
+}
+.button{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 45px;
+    padding:8px;
+    background-color: lightseagreen;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding:8px;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background-color: lightseagreen;
+}
+/* Home section  */
+#Home a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+
+}
+#Home h1{
+    font-size: 60px;
+    font-weight: 100;
+    text-shadow: 2px 3px blue;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+#Home p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px blue;
+    
+    
+}
+#Home{
+    margin-left:5%;
+    margin-top: 5%;
+}
+#Home .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #f1a820, #8cd405a9 );
+    border-radius: 6px;
+    padding: 10px 20px ;
+    margin-top: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+   
+}
+
+.srch{
+    width: 200px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid blue;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-right: none;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.buttn{
+    width: 100px;
+    height: 40px;
+    background: lightseagreen;
+    color: white;
+    font-size: 16px;
+    border-bottom-right-radius: 5px;
+    transition: .5s ease;
+    cursor: pointer;
+
+}
+.buttn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.form{
+    width: 250px;
+    height: 300px;
+    background:black;
+    opacity: 0.8;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.form h2{
+    text-align: center;
+    color: orange;
+    padding: 2px;
+}
+.form p{
+    color:orange;
+    text-shadow: none;
+}
+.form input{
+    width: 230px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 4px;
+
+}
+/* About section  */
+
+#about-us {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* text-align: left; */
+    height: 500px;
+    margin-top: 9%;
+    background: black;
+    color:white;
+    
+}
+#about-us .head{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+/* #about-us h1 {
+    margin-right: 20px;
+    
+} */
+
+#About img {
+    max-width:400px; 
+    height: 300px;
+    border: 4px solid orange;
+    border-radius: 10px;
+}
+#About{
+    /* flex: 1; */
+    float: left;
+    margin-right: 30px;
+}
+
+ .text {
+    flex: 2; 
+    padding: 10px;
+}
+.text h2{
+    color: darkgoldenrod;
+    font-size: 50px;
+}
+.text p{
+    font-size: 25px;
+
+}
+.icons{
+    display: flex;
+    padding: 10px;
+    width: 50px;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.icons a{
+    text-decoration: none;
+    color: orange;
+    margin-right: 30px;
+}
+/* Skills Section  */
+
+#myskills{
+    /* display: flex; */
+    background: black;
+    color: white;
+    height: 400px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#Skills{
+    display: flex;
+    justify-content: space-between;
+}
+#Skills img
+{
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    /* text-align: center; */
+    border: 4px solid orange;
+    margin: 10px;
+    /* padding: 20px; */
+}
+#Skills h2{
+    text-align: center;
+}
+#Skills p{
+    text-align: center;
+}
+#myskills .head{
+    font-size: 40px;
+    text-align: center;
+}
+@media(max-width:700px){
+    .navbar{
+        flex-direction: column;
+        height: 20vh;
+    }
+    .navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 2px;
+        padding-bottom: 2px;
+    }
+    .srch{
+        width: 100px;
+        padding: 5px;
+    }
+    .buttn{
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .container{
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    #Home{
+        height: 380px;
+        padding: 3px 60px;
+    
+    }
+    #Home h1{
+        font-size: 30px;
+        margin-top: 4px;
+        margin-bottom: 5px;
+    }
+    #Home p{
+        font-size: 12px;
+    }
+    #Home .btn{
+        padding: 2px 7px ;
+        margin-top: 1px;
+    }
+    .form{
+    width: 70%;
+    height: 220px;
+    top: 35%;
+    left: 10%;
+    }
+    #about-us {
+        height: 600px;
+    }
+    .text h2{
+        font-size: 25px;
+    }
+    .text p{
+        font-size: 15px;
+    
+    }
+    .icons{
+        padding: 10px;
+        width: 30px;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .icons a{
+        margin-right: 15px;
+    }
+    #myskills{
+        /* display: flex; */
+        height: auto;
+        margin-top: 10px;
+    }
+    #Skills{
+        flex-direction: column;
+    }
+    #Skills img{
+    justify-content: center;
+    align-items: center;
+    
+    }
+}
+
+
